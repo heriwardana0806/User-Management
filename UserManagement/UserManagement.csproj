@@ -76,12 +76,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Context\MyContext.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Migrations\201910011033129_addingdatabase.cs" />
+    <Compile Include="Migrations\201910011033129_addingdatabase.designer.cs">
+      <DependentUpon>201910011033129_addingdatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201910010809323_addingmodel.cs" />
-    <Compile Include="Migrations\201910010809323_addingmodel.designer.cs">
-      <DependentUpon>201910010809323_addingmodel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Views\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
@@ -114,8 +118,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201910010809323_addingmodel.resx">
-      <DependentUpon>201910010809323_addingmodel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910011033129_addingdatabase.resx">
+      <DependentUpon>201910011033129_addingdatabase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,14 +134,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="Views\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\mii.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
