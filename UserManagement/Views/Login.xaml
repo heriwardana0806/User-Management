@@ -31,7 +31,9 @@
                     <Button Margin="106,0,106,15" Content="SIGN IN" Click="SignIn_Click"  Background="#FFEC7373" Name="SignIp"  BorderBrush="#FFEC7373" FontSize="14" FontWeight="Normal" Foreground="White" Height="32" VerticalAlignment="Bottom"/>
                     
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="30" Margin="105,0,0,0" RenderTransformOrigin="0.531,0.309" Width="110">
-                        <TextBlock TextWrapping="Wrap" Text="Forgot Password?" Foreground="#FF2F9EFB" TextDecorations="Underline" Width="101" Height="30" VerticalAlignment="Bottom"/>
+                        <TextBlock TextWrapping="Wrap"   Foreground="#FF2F9EFB" TextDecorations="Underline" Width="101" Height="30" VerticalAlignment="Bottom">
+                            Forgot Password?
+                        </TextBlock>
                     </StackPanel>
                 </StackPanel>
             </Border>

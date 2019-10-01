@@ -32,9 +32,9 @@ namespace UserManagement.Controllers
             }
         }
 
-        public void UserLogin(string email, string pword)
+        public bool UserLogin(string email, string pword)
         {
-
+            var status = true;
             User user = new Models.User();
             MyContext _context = new MyContext();
 
@@ -43,18 +43,21 @@ namespace UserManagement.Controllers
             if (get == null)
             {
                 MessageBox.Show("You are not Registered yet!");
+                status = false;
             }
             else
             {
                 if (get.Password != pword)
                 {
                     MessageBox.Show("Your Password is Incorrect!");
+                    status = false;
                 }
                 else
                 {
                     MessageBox.Show("Login Successful!");
                 }
             }
+            return status;
         }
 
         public void ChangePass(string email, string pword)

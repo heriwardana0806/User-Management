@@ -55,15 +55,19 @@ namespace UserManagement.Views
                 string email = UsernameTextBox.Text;
                 string password = PasswordTextBox.Password;
 
-                CallUser.UserLogin(email, password);
-                this.Hide();
-                Home home = new Home();
-                home.Show();
+                var status = CallUser.UserLogin(email, password);
+                if (status == true)
+                {
+                    this.Hide();
+                    Home home = new Home();
+                    home.Show();
+                }
+
             }
         }
 
 
-        
+
 
         private void RememberCheck_Checked(object sender, RoutedEventArgs e)
         {
