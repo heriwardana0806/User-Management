@@ -29,7 +29,7 @@
                 
 
             </StackPanel>
-            <Border Background="#FFFBFBEE" Margin="0,-17" CornerRadius="10" Height="530">
+            <Border Background="#FFFBFBEE" Margin="5,-17" CornerRadius="10" Height="530">
                  <StackPanel Margin="10">
                  <Label Content="List Employe" FontWeight="Bold" FontSize="20"/>
                  <DataGrid Margin="10,10,10,65"/>
