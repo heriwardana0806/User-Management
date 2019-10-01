@@ -21,7 +21,7 @@
         </Grid.RowDefinitions>
         <StackPanel Margin="50">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" RenderTransformOrigin="0.531,0.309" Width="1180" Height="100">
-                <Image Source="/Asset/mii.png" Margin="18,10,730,22" Width="88"/>
+                <Image Source="/Asset/mii.png" Margin="18,5,730,22" Width="88"/>
                 <TextBox TextWrapping="Wrap" Text="Search" Width="174" Margin="10,30,0,25" FontSize="18">
                 </TextBox>
                 <Image Source="/Asset/insert.png" Margin="15,6,15,14" Width="65"/>

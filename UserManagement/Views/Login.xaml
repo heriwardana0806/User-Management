@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UserManagement.Views"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="720" Width="1280" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background="#FFC7E8FF">
+        mc:Ignorable="d" Height="720" Width="1280" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
     <Grid Height="720" VerticalAlignment="Bottom">
         <Grid.Background>
             <RadialGradientBrush>
@@ -27,9 +27,7 @@
                     <PasswordBox Margin="15" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password"/>
                     <CheckBox Margin="97,5,87,5" Content="Remember Me" Height="36"/>
                     <Button Margin="106,0,106,15" Content="SIGN IN" Background="#FFEC7373" BorderBrush="#FFEC7373" FontSize="14" FontWeight="Normal" Foreground="White" Height="32" VerticalAlignment="Bottom"/>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="30" Margin="105,0,0,0" RenderTransformOrigin="0.531,0.309" Width="110">
-                        <TextBlock TextWrapping="Wrap" Text="Forgot Password?" Foreground="#FF2F9EFB" TextDecorations="Underline" Width="101" Height="30" VerticalAlignment="Bottom"/>
-                    </StackPanel>
+                    <TextBlock TextWrapping="Wrap" Text="Forgot Password?" Foreground="#FF2F9EFB" TextDecorations="Underline" Height="30" VerticalAlignment="Bottom" Margin="106,0,100,0"/>
                 </StackPanel>
             </Border>
         </StackPanel>
